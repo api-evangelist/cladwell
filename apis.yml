@@ -1,7 +1,25 @@
 aid: cladwell
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/cladwell.png
 name: Cladwell
-description: Cladwell is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Cladwell is a smart-closet and outfit-planning consumer application that helps people
+  build capsule wardrobes and get more wear out of the clothes they already own. The service digitizes
+  a user's closet, then uses AI styling ("Ask Cladwell") together with weather and personal preferences
+  to recommend daily outfits, reduce over-buying, and encourage sustainable, intentional dressing. With
+  more than one million app downloads, Cladwell is delivered primarily as iOS/Android and web apps
+  (app.cladwell.com) with a subscription model; it currently exposes no public developer API. Founded and
+  led by CEO Erin Flynn, it was surfaced as a portfolio company of 500 Global and added to the API
+  Evangelist network for enrichment tracking.
 url: https://raw.githubusercontent.com/api-evangelist/cladwell/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +29,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Fashion
+- Wardrobe
+- Sustainability
+- Retail
+- Consumer App
+- AI Styling
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +47,22 @@ maintainers:
 common:
 - type: Website
   url: https://cladwell.com
+- type: SignUp
+  url: https://app.cladwell.com
+- type: Login
+  url: https://app.cladwell.com
+- type: Pricing
+  url: https://cladwell.com/pricing
+- type: Support
+  url: https://cladwell.zendesk.com
+- type: TermsOfService
+  url: https://cladwell.com/terms-of-service
+- type: PrivacyPolicy
+  url: https://cladwell.com/privacy-policy
+- type: DomainSecurity
+  url: security/cladwell-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
